@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -62,6 +63,8 @@ section {
 /* Navigation Section */
 .top-navigation {
 	background-color: #fff;
+	position: fixed;
+	width: 100%;
 }
 .top-navigation > .content {
 	height: 4.375rem;
@@ -213,9 +216,39 @@ margin-left: -1.625rem;
     50% {margin-top: 2rem;}
 }
 
+.cases .devices {
+    width: 33.3333333%;
+    display: inline-block;
+    /* styles to assist with debugging */
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 4em;
+}
 
+ol, ul {
+list-style: none;
+}
 
+li {
+display: list-item;
+text-align: -webkit-match-parent;
+}
 
+.cases .devices > li {
+width: 33.3333333%;
+}
+
+.cases {
+background-color: #fff;
+overflow: hidden;
+padding-bottom: 10rem;
+}
+
+.cases h2 {
+font-size: 2.75rem;
+margin: 1.625rem 0 3.125rem;
+font-weight: 300;
+}
 
 
 
