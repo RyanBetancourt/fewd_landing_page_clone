@@ -51,6 +51,7 @@ table {
 body {
     background-color: LightGray;
     font-family: 'Roboto', sans-serif; 
+    -webkit-font-smoothing: antialiased;
 }
 div {
     border: 1px solid Chocolate;
@@ -65,6 +66,7 @@ section {
 	background-color: #fff;
 	position: fixed;
 	width: 100%;
+	border-bottom: 1px solid #DDD;
 }
 .top-navigation > .content {
 	height: 4.375rem;
